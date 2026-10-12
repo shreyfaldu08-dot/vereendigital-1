@@ -29,6 +29,7 @@ const config: Config = {
         "hair-strong": "rgba(255,255,255,0.28)",
       },
       fontFamily: {
+        sans: ["var(--font-display)", "system-ui", "sans-serif"],
         display: ["var(--font-display)", "system-ui", "sans-serif"],
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },

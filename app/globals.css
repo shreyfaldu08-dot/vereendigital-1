@@ -7,6 +7,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #000;
+    font-family: var(--font-display), system-ui, sans-serif;
   }
 
   body {

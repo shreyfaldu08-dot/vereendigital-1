@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Outfit, JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/providers/SmoothScroll";
 import Cursor from "@/components/chrome/Cursor";
@@ -9,9 +10,8 @@ import Nav from "@/components/chrome/Nav";
 import Footer from "@/components/chrome/Footer";
 import PageTransition from "@/components/chrome/PageTransition";
 
-const display = Outfit({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+const display = localFont({
+  src: "./fonts/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf",
   variable: "--font-display",
   display: "swap",
 });
