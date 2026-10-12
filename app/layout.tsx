@@ -13,6 +13,7 @@ import PageTransition from "@/components/chrome/PageTransition";
 const display = localFont({
   src: "./fonts/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf",
   variable: "--font-display",
+  weight: "100 900",
   display: "swap",
 });
 
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${display.variable} ${mono.variable}`}>
-      <body className="grain bg-void">
+      <body className={`${display.className} grain bg-void font-display`}>
         <SmoothScroll>
           <Preloader />
           <Cursor />

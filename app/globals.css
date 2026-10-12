@@ -2,12 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('/fonts/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
-  html {
+  html,
+  body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #000;
-    font-family: var(--font-display), system-ui, sans-serif;
+    font-family: var(--font-display), 'Bricolage Grotesque', system-ui, sans-serif;
   }
 
   body {
